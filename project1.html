@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project" />
+  <meta name="author" content="Peter Alaniemi" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Upptäck andra yrken - Peter Alaniemi</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="top-bar">
+    <div class="left-group">
+      <a href="index.html" class="logo">Peter Alaniemi</a>
+      <nav class="nav-links">
+        <a href="about.html">About me</a>
+        <a href="index.html#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="allprojects-wrapper">
+    <section class="intro">
+      <h1 class="allprojects-title">Upptäck andra yrken</h1>
+      <h2 class="allprojects-subtitle">UX-design, UI-design, UX-research</h2>
+      <p class="allprojects-description">This project was part of my Master's thesis written during the Human-Computer Interaction (HCI) program. It focused on redesigning Arbetsförmedlingen's AI job recommendation service "Upptäck andra yrken" to explore how explainable AI (XAI) can improve the overall user experience beyond trust, making job suggestions clearer, more relevant, and easier to understand, helping users make better decisions.</p>
+      <p class="allprojects-description"> The process involved using a Research through Design (RTD) approach, combined with methods such as Think-Aloud usability testing, the User Experience Questionnaire (UEQ), and semi-structured interviews.</p>  
+      <p class="allprojects-description"> The redesign led to an overall improvement in user experience, particularly in areas such as understandability, comparison, and self-explainability. Although based on a small sample, the UEQ results indicated higher scores across several dimensions compared to Arbetsförmedlingen's original design. In summary, the findings suggest that explainability can enhance UX not only by building trust, but also by improving clarity, relevance, and user decision-making.</p>  
+      <a href="https://example.com/thesis-page" target="_blank" class="thesis-link">
+        📄 Read Full Thesis
+      </a>
+    </section>
+
+    <section class="summary-cards">
+      <div class="card">
+        <h3>Role</h3>
+        <p>UX-Researcher & Designer</p>
+      </div>
+        <div class="card">
+        <h3>Team</h3>
+        <p>Collaborative project with 1 other HCI student in the same role</p>
+      </div>
+      <div class="card">
+        <h3>Tools & Methods</h3>
+        <p>Figma, Miro, Prototyping, User Interviews, Think-Aloud Testing, User Experience Questionnaire, Research through Design, Data Analysis, Affinity Diagrams</p>
+      </div>
+      <div class="card">
+        <h3>Time Spent</h3>
+        <p>2025, 4 months, Full-time 100%</p>
+      </div>
+    </section>
+
+    <section class="allprojects-images">
+      <img class="clickable-img" src="images/start-page.svg" alt="Image of current design 1" />
+      <img class="clickable-img" src="images/results.svg" alt="Image of current design 2" />
+      <img class="clickable-img" src="images/job1.svg" alt="Image of current design 3" />
+      <img class="clickable-img" src="images/summary.svg" alt="Image of current design 4" />
+    </section>
+
+    <section class="design-text">
+      <p><i>Current design flow.</i></p>
+    </section>
+
+        <section class="allprojects-images">
+      <img class="clickable-img" src="images/start-page-redesign.svg" alt="Image of redesign 1" />
+      <img class="clickable-img" src="images/adjust-redesign.svg" alt="Image of redesign 2" />
+      <img class="clickable-img" src="images/results-redesign.svg" alt="Image of redesign 3" />
+      <img class="clickable-img" src="images/job1-redesign.svg" alt="Image of redesign 4" />
+      <img class="clickable-img" src="images/summary-redesign.svg" alt="Image of redesign 5" />
+      <img class="clickable-img" src="images/summary-ranking.svg" alt="Image of redesign 6" />
+      <img class="clickable-img" src="images/map-redesign.svg" alt="Image of redesign 7" />
+      <img class="clickable-img" src="images/bubbles-redesign.svg" alt="Image of redesign 8" />
+    </section>
+    
+    <section class="design-text">
+      <p><i>Redesigned design flow.</i></p>
+    </section>
+
+    <section class="problem">
+      <h2>Problem & Context</h2>
+      <p>As artificial intelligence becomes a growing part of everyday services, the need for understandable, user-centered explanations grows as well. 
+        Most existing Explainable AI (XAI) solutions are aimed at developers, offering technical insights that do little to support everyday users in
+        understanding or trusting the systems they interact with. In this project, conducted in collaboration with the
+        Swedish Public Employment Services (Arbetsförmedlingen), we explored how XAI design principles could be applied
+        to their AI-driven job recommendation tool, "Upptäck andra yrken". The goal was to explore whether explainability could be used as more than just a tool for trust,
+        to see if it could also support user understanding and improve the overall experience.</p>
+    </section>
+
+    <section class="approach">
+      <h2>Design Process</h2>
+      <p>We applied a Research through Design (RtD) methodology, utilizing our designs as a tool for research. Our process began with stakeholder interviews and reviewing previous user tests conducted by Arbetsförmedlingen. 
+      This gave us insights into both existing usability issues with their current design, and what technical limitations their AI had. To begin our design process,
+      we conducted a literature review and gathered around 60 XAI-related design principles from academic research. These were then combined into five actionable XAI Core Clusters which we named:</p>
+      <ul>
+        <li>Explanation & Reasoning</li>
+        <li>User Control</li>
+        <li>Context Awareness</li>
+        <li>Interactivity & Understandability</li>
+        <li>Ethics, Trust & Transparency</li>
+      </ul>
+      <p>We used these clusters and their design principles to guide the redesign. After the redesign had been developed through Figma, pilot tests were conducted to refine
+        the upcoming user testing process. The final user tests compared the redesign with the current design, and included think-alouds, the User Experience Questionnaire (UEQ), and semi-structured interviews.</p>
+    </section>
+
+    <section class="design-solution">
+      <h2>Key Changes</h2>
+      <p>The redesign introduced several changes that operationalized the XAI principles directly into the interface. Key features included:</p>
+      <ul>
+        <li>Contextual Explanations – Instead of a single block of text for explainability (as was used in the existing design), explanations were distributed across the flow using tooltips and contextually appropriate explanations.</li>
+        <li>Personalizable Input – An additional step between the first job input, and the generation of the job suggestions, was added. This allowed the user to adjust what aspects of their job was relevant for the job suggestions.</li>
+        <li>Comparison & Overview – Users could now view multiple job suggestions side-by-side, making it easier to compare them with eachother.</li>
+        <li>Interactive Exploration – Users could now regenerate job suggestions, promoting the use of self-explanation to understand how the suggestions were generated.</li>
+        <li>Different ways to present the results – The previous ranking feature was expanded upon, and two alternatives were added to allow users to choose how the results is presented to them. These included an interactive profession map, as well as a simple visual example.</li>
+      </ul>
+      <p>These changes were grounded in human-centered XAI principles and aimed to support a broader range of user goals and mental models, rather than just making the AI's logic transparent.</p>
+    </section>
+
+    <section class="outcomes">
+      <h2>Impact & Insights</h2>
+      <p>The user tests showed clear signs of improved experience and understandability in the redesigned version. The redesign scored higher in the UEQ across the board, compared to the current design. While based on a relatively small sample, they indicated a strong positive trend.
+        Our thematic analysis surfaced five recurring themes with the users experiences: </p>
+      <ul>
+        <li>Better Understanding of system logic through contextual explanations</li>
+        <li>Improved Comparison between job results</li>
+        <li>Encouraged Self-Explanation through exploration</li>
+        <li>Greater Sense of Control in navigating recommendations</li>
+        <li>Improved flexibility in the service</li>
+      </ul>
+      <p>The results indicate that explainability can in fact be used to support and improve both understandability, as well as the overall user experience, if applied successfully and appropriately.</p>
+    </section>
+
+    <div class="back-button-container">
+      <a href="index.html" class="btn back-btn">Back to Home</a>
+    </div>
+  </main>
+
+
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-img" />
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = modal.querySelector('.modal-img');
+  const closeBtn = modal.querySelector('.close');
+  const prevBtn = modal.querySelector('.prev');
+  const nextBtn = modal.querySelector('.next');
+
+  const images = Array.from(document.querySelectorAll('.clickable-img'));
+  let currentIndex = 0;
+
+  images.forEach((img, i) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      currentIndex = i;
+      openModal();
+    });
+  });
+
+  function openModal() {
+    modal.style.display = 'flex';
+    modalImg.src = images[currentIndex].src;
+  }
+
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    modalImg.src = images[currentIndex].src;
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    modalImg.src = images[currentIndex].src;
+  }
+
+  closeBtn.onclick = closeModal;
+  nextBtn.onclick = showNext;
+  prevBtn.onclick = showPrev;
+
+  // Close modal if clicking outside image
+  modal.onclick = function(e) {
+    if (e.target === modal) closeModal();
+  };
+  
+  window.addEventListener('load', () => {
+  const modal = document.getElementById('modal');
+  const modalImg = modal.querySelector('.modal-img');
+
+  modal.style.display = 'none';   // Hide modal on load
+  modalImg.src = '';               // Clear any leftover image source
+});
+</script>
+
+</body>
+</html>

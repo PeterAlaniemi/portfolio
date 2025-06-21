@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project" />
+  <meta name="author" content="Peter Alaniemi" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ReConvo - Peter Alaniemi</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="top-bar">
+    <div class="left-group">
+      <a href="index.html" class="logo">Peter Alaniemi</a>
+      <nav class="nav-links">
+        <a href="about.html">About me</a>
+        <a href="index.html#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="allprojects-wrapper">
+    <section class="intro">
+      <h1 class="allprojects-title">ReConvo</h1>
+      <h2 class="allprojects-subtitle">UX-design, UI-design, UX-research</h2>
+      <p class="allprojects-description">"ReConvo" was a prototype application developed to explore how AI-driven tools can support meetings and group conversations.
+        The goal was to build and test a “conversation assistant” that could visualize and communicate important aspects of a meeting, both live and after the meetings as a summary. These aspects were e.g who spoke when, how fast they spoke,
+        and what topics were discussed. In addition to this, the project also looked at the privacy implications of such a system, and if people are okay with such an intrusive design.</p>
+        
+        <p class="allprojects-description">Through the use of Wizard of Oz prototyping, both analog and digital, as well as other user-centered evaluation methods,
+        we designed and iteratively tested the tool in order to better understand its impacts.</p>
+
+        <p class="allprojects-description">Findings showed a generally positive response. Users appreciated the visual feedback and found the concept interesting.
+          Privacy concerns were context-dependent, as users thought the application would be more acceptable in professional meetings than personal conversations.
+          Small design choices, such as using colors over percentages, made feedback feel more reflective than judgmental. 
+          Finally, users preferred post-meeting insights and summaries over the live transcriptions and feedback. </p>
+    </section>
+
+    <section class="summary-cards">
+      <div class="card">
+        <h3>Role</h3>
+        <p>UX-Researcher & Designer</p>
+      </div>
+        <div class="card">
+        <h3>Team</h3>
+        <p>Collaborative project with 3 other HCI students in the same role</p>
+      </div>
+      <div class="card">
+        <h3>Tools & Methods</h3>
+        <p>Figma, Notion, Wizard of Oz, Prototyping, Provotype, Wireframing, Cooperative Evaluation, Cognitive Walkthrough</p>
+      </div>
+      <div class="card">
+        <h3>Time Spent</h3>
+        <p>2023, 2 months, Part-time 30%</p>
+      </div>
+    </section>
+
+    <section class="allprojects-images">
+      <img class="clickable-img" src="images/reconvo-home.png" alt="Home" />
+      <img class="clickable-img" src="images/reconvo-livesession.png" alt="Live-session" />
+      <img class="clickable-img" src="images/reconvo-sessionstats.png" alt="Session stats" />
+      <img class="clickable-img" src="images/reconvo-sessions.png" alt="Sessions" />
+    </section>
+
+    <section class="design-text">
+      <p><i>Design flow.</i></p>
+    </section>
+
+    <section class="allprojects-images">
+      <img class="clickable-img" src="images/reconvo-postits.png" alt="Post-it notes" />
+      <img class="clickable-img" src="images/reconvo-frontofhouse.png" alt="Notion Prototype 1" />
+      <img class="clickable-img" src="images/reconvo-behindthescenes.png" alt="Notion Prototype 2" />
+      <img class="clickable-img" src="images/reconvo-ideation.png" alt="Ideation" />
+    </section>
+    
+    <section class="design-text">
+      <p><i>Design Process & User Tests.</i></p>
+    </section>
+
+    <section class="problem">
+      <h2>Problem & Context</h2>
+      <p>The concept of "ReConvo" was made in order to explore how AI could provide real-time, visual feedback and post-meeting insights to improve the structure and flow of meetings.
+        However, the concept raised important questions in terms of privacy and user comfort, especially in regards to being recorded and evaluated.
+        The challenge was to explore the value and acceptability of such a system. Could meeting participants find value in having their speaking behaviors visualized?
+        Would the tool be seen as helpful or intrusive? And what design choices could make the system feel more acceptable and transparent?</p>
+    </section>
+
+    <section class="approach">
+      <h2>Design Process</h2>
+      <p>We followed an iterative design process using multiple rounds of prototyping and user testing. Early on, we came up with several voice-based concepts, but eventually we ended up narrowing our focus down to a meeting assistant that tracked conversation activity.
+        The prototyping process involved two parts. The first one focusing more on testing the acceptance and response to the concept through both analog and digital Wizard of Oz prototypes. The second part then used the insights from the WoZ tests to design and test a
+        high-fidelity prototype in Figma.</p>
+      <ol>
+        <li>Wizard of Oz (WoZ) Prototypes:</li>
+          <ul>
+            <li>Sticky Note Prototype: Live note-taking by “wizards” displayed participants contributions with color-coded sticky notes during a real conversation. Participants could see what had been said, and how much each participant had spoken during the conversation.</li>
+            <li>Notion Prototype: A digital version using the Notion app simulated live "AI" note-taking during a conversation. This helped us better understand how a digital medium might affect users perception of the concept.</li>
+          </ul>
+        <li>High Fidelity Prototype (With 3 major functions):</li>
+          <ul>
+            <li>Meeting Preparation: Plan agenda, invite participants, and access past sessions.</li>
+            <li>Live Session: Real-time visualization of who speaks when, how fast users speak, and interactive functions allowing muting and taking breaks.</li>
+            <li>Post-Meeting Summary: Key metrics such as talk time, word use, topics discussed, and visual graphs summarizing the meeting's content and overall flow.</li>
+          </ul>
+      </ol>
+    </section>
+
+    <section class="design-solution">
+      <h2>Key Features</h2>
+      <p>These are some of the key features in the High-Fidelity Prototype:</p>
+      <ul>
+        <li>Color-Coded Speaking Indicators - Replaced raw numbers with colored visuals to show participation levels.</li>
+        <li>Speech Speed Meter - Real-time feedback on individual speaking pace to support self-awareness.</li>
+        <li>Session Summary & Stats - Post-meeting screen with optional analytics like the most used words, participation amount, and other general feedback. The feedback is intended to help users better understand what they can individually and as a team change to improve meeting flow.</li>
+        <li>Mute & Privacy Controls - Users could pause recording/tracking during sensitive discussions, giving them more control over what data is collected and saved.</li>
+      </ul>
+    </section>
+
+    <section class="outcomes">
+      <h2>Impact & Insights</h2>
+      <p>User evaluations included both cooperative and cognitive walkthrough methods, involving participants with varied attitudes toward surveillance and AI. The overall key findings from this project were:</p>
+      <ul>
+        <li>Positive Reception - Participants appreciated the visual feedback, found it helpful for focus and structure, and did not find the concept overly intrusive.</li>
+        <li>Privacy & Context - While participants accepted the tool in professional settings, they noted it would be less acceptable in casual or personal contexts.</li>
+        <li>Design Matters - Small changes, such as using colors instead of percentages, helped shift feedback from being overly judgmental to fun and reflective.</li>
+        <li>Live vs Post-meeting - Users were in general, more interested in post-meeting insights than full conversation transcripts, valuing summaries over live feedback.</li>
+      </ul>
+      <p>The concept of a "ReConvo" shows that AI-driven meeting tools such as this could indeed prove to be useful. Though, it is important to be careful when it comes to design choices affecting privacy and intrusiveness.</p>
+    </section>
+
+    <div class="back-button-container">
+      <a href="index.html" class="btn back-btn">Back to Home</a>
+    </div>
+  </main>
+
+
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-img" />
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = modal.querySelector('.modal-img');
+  const closeBtn = modal.querySelector('.close');
+  const prevBtn = modal.querySelector('.prev');
+  const nextBtn = modal.querySelector('.next');
+
+  const images = Array.from(document.querySelectorAll('.clickable-img'));
+  let currentIndex = 0;
+
+  images.forEach((img, i) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      currentIndex = i;
+      openModal();
+    });
+  });
+
+  function openModal() {
+    modal.style.display = 'flex';
+    modalImg.src = images[currentIndex].src;
+  }
+
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    modalImg.src = images[currentIndex].src;
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    modalImg.src = images[currentIndex].src;
+  }
+
+  closeBtn.onclick = closeModal;
+  nextBtn.onclick = showNext;
+  prevBtn.onclick = showPrev;
+
+  // Close modal if clicking outside image
+  modal.onclick = function(e) {
+    if (e.target === modal) closeModal();
+  };
+  
+  window.addEventListener('load', () => {
+  const modal = document.getElementById('modal');
+  const modalImg = modal.querySelector('.modal-img');
+
+  modal.style.display = 'none';   // Hide modal on load
+  modalImg.src = '';               // Clear any leftover image source
+});
+</script>
+
+</body>
+</html>
