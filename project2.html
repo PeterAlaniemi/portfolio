@@ -184,7 +184,6 @@
   nextBtn.onclick = showNext;
   prevBtn.onclick = showPrev;
 
-  // Close modal if clicking outside image
   modal.onclick = function(e) {
     if (e.target === modal) closeModal();
   };
@@ -193,8 +192,8 @@
   const modal = document.getElementById('modal');
   const modalImg = modal.querySelector('.modal-img');
 
-  modal.style.display = 'none';   // Hide modal on load
-  modalImg.src = '';               // Clear any leftover image source
+  modal.style.display = 'flex';
+  modalImg.src = '';
 });
 </script>
 
