@@ -145,57 +145,49 @@
 </div>
 
 <script>
-  const modal = document.getElementById('modal');
-  const modalImg = modal.querySelector('.modal-img');
-  const closeBtn = modal.querySelector('.close');
-  const prevBtn = modal.querySelector('.prev');
-  const nextBtn = modal.querySelector('.next');
+const modal = document.getElementById('modal');
+const modalImg = modal.querySelector('.modal-img');
+const closeBtn = modal.querySelector('.close');
+const prevBtn = modal.querySelector('.prev');
+const nextBtn = modal.querySelector('.next');
 
-  const images = Array.from(document.querySelectorAll('.clickable-img'));
-  let currentIndex = 0;
+const images = Array.from(document.querySelectorAll('.clickable-img'));
+let currentIndex = 0;
 
-  images.forEach((img, i) => {
-    img.style.cursor = 'pointer';
-    img.addEventListener('click', () => {
-      currentIndex = i;
-      openModal();
-    });
+images.forEach((img, i) => {
+  img.style.cursor = 'pointer';
+  img.addEventListener('click', () => {
+    currentIndex = i;
+    openModal();
   });
-
-  function openModal() {
-    modal.style.display = 'flex';
-    modalImg.src = images[currentIndex].src;
-  }
-
-  function closeModal() {
-    modal.style.display = 'none';
-  }
-
-  function showNext() {
-    currentIndex = (currentIndex + 1) % images.length;
-    modalImg.src = images[currentIndex].src;
-  }
-
-  function showPrev() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    modalImg.src = images[currentIndex].src;
-  }
-
-  closeBtn.onclick = closeModal;
-  nextBtn.onclick = showNext;
-  prevBtn.onclick = showPrev;
-
-  modal.onclick = function(e) {
-    if (e.target === modal) closeModal();
-  };
-  
-  window.addEventListener('load', () => {
-  const modal = document.getElementById('modal');
-  const modalImg = modal.querySelector('.modal-img');
-
-  modal.style.display = 'flex';
-  modalImg.src = '';
 });
+
+function openModal() {
+  modal.style.display = 'flex';
+  modalImg.src = images[currentIndex].src;
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+function showNext() {
+  currentIndex = (currentIndex + 1) % images.length;
+  modalImg.src = images[currentIndex].src;
+}
+
+function showPrev() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  modalImg.src = images[currentIndex].src;
+}
+
+closeBtn.onclick = closeModal;
+nextBtn.onclick = showNext;
+prevBtn.onclick = showPrev;
+
+modal.onclick = function(e) {
+  if (e.target === modal) closeModal();
+};
 </script>
 
 </body>
